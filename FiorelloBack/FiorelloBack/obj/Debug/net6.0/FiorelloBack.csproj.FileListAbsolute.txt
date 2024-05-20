@@ -1,0 +1,8 @@
+C:\Users\Amirastan\Desktop\PB-101\BackEnd\HomeTask-14-05-2024\FiorelloBack\FiorelloBack\obj\Debug\net6.0\FiorelloBack.csproj.AssemblyReference.cache
+C:\Users\Amirastan\Desktop\PB-101\BackEnd\HomeTask-14-05-2024\FiorelloBack\FiorelloBack\obj\Debug\net6.0\FiorelloBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amirastan\Desktop\PB-101\BackEnd\HomeTask-14-05-2024\FiorelloBack\FiorelloBack\obj\Debug\net6.0\FiorelloBack.AssemblyInfoInputs.cache
+C:\Users\Amirastan\Desktop\PB-101\BackEnd\HomeTask-14-05-2024\FiorelloBack\FiorelloBack\obj\Debug\net6.0\FiorelloBack.AssemblyInfo.cs
+C:\Users\Amirastan\Desktop\PB-101\BackEnd\HomeTask-14-05-2024\FiorelloBack\FiorelloBack\obj\Debug\net6.0\FiorelloBack.csproj.CoreCompileInputs.cache
+C:\Users\Amirastan\Desktop\PB-101\BackEnd\HomeTask-14-05-2024\FiorelloBack\FiorelloBack\obj\Debug\net6.0\FiorelloBack.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Amirastan\Desktop\PB-101\BackEnd\HomeTask-14-05-2024\FiorelloBack\FiorelloBack\obj\Debug\net6.0\FiorelloBack.RazorAssemblyInfo.cache
+C:\Users\Amirastan\Desktop\PB-101\BackEnd\HomeTask-14-05-2024\FiorelloBack\FiorelloBack\obj\Debug\net6.0\FiorelloBack.RazorAssemblyInfo.cs
