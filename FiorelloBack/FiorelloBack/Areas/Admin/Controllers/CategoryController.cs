@@ -74,5 +74,54 @@ namespace FiorelloBack.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Edit (int? id)
+        {
+            if (id is null) return BadRequest();
+
+            var category = await _categoryService.GetByIdAsync((int)id);
+
+            if (category is null) return NotFound();
+
+            return View(new CategoryEditVM { Name = category.Name });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int? id, CategoryEditVM request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            if (id is null) return BadRequest();
+
+            if(await _categoryService.ExistExceptByIdAsync((int)id, request.Name))
+            {
+                ModelState.AddModelError("Name", "This category already exist");
+                return View();
+            }                        
+
+            var category = await _categoryService.GetByIdAsync((int)id);
+
+            if (category is null) return NotFound();
+
+            if (category.Name == request.Name)
+            {
+                return RedirectToAction(nameof(Index));
+            } 
+
+            category.Name = request.Name;
+
+            await _context.SaveChangesAsync();
+
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
     }
 }

@@ -31,6 +31,11 @@ namespace FiorelloBack.Services
             return await _context.Categories.AnyAsync(m => m.Name.Trim() == name.Trim());
         }
 
+        public async Task<bool> ExistExceptByIdAsync(int id,string name)
+        {
+            return await _context.Categories.AnyAsync(m => m.Name == name && m.Id != id);
+        }
+
         public async Task<IEnumerable<Category>> GetAllAsync()
         {
             return await _context.Categories.ToListAsync();

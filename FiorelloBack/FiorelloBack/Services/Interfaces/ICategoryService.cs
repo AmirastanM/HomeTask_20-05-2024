@@ -13,7 +13,7 @@ namespace FiorelloBack.Services.Interfaces
         Task CreateAsync(Category category);
         Task DeleteAsync(Category category);
         Task<IEnumerable<CategoryProductVM>> GetCategoryDetailWhithProductsAsync();
-
+        Task<bool> ExistExceptByIdAsync(int id, string name);
 
 
 

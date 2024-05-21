@@ -1,0 +1,22 @@
+﻿@model BlogEditVM
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container mt-5">
+    <div class="image">
+        <img src="~/img/@Model.Image" style="width:300px; height:200px" />
+    </div>
+    <form class="forms-sample" method="post" asp-action="Edit" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="exampleInput">Blogs</label>
+            <input class="form-control" asp-for="Title" id="exampleInput" maxlength="100" placeholder="Titel . . ." />
+            <input class="form-control" asp-for="Description" id="exampleInput" maxlength="100" placeholder="Description . . ." />
+            <input class="form-control" asp-for="NewImage" id="exampleInput" maxlength="100" placeholder="Image . . ." />
+            <span asp-validation-for="NewImage" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a class="btn btn-light" asp-action="Index">Cancel</a>
+    </form>
+</div>
